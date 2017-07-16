@@ -1,0 +1,138 @@
+/*------------------------------------------------*/
+/* FOOTER                                         */
+/*------------------------------------------------*/
+
+footer {
+	margin-top: 5px;
+	margin-bottom: 10px;
+    background-color: #333;
+    padding: 40px;
+	
+}
+
+.footer-nav {
+    list-style: none;
+    float: left;
+}
+
+.social-links {
+    list-style: none;
+    float: right;
+	margin:0;
+}
+
+.footer-nav li,
+.social-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-nav li:last-child,
+.social-links li:last-child {
+    margin-right: 0;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited{
+    text-decoration: none;
+    border: 0;
+    color: #888;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+    
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active{
+    color: #ddd;
+    
+}
+
+.social-links li a:link,
+.social-links li a:visited{
+    font-size: 140%
+}
+
+.ion-social-facebook,
+.ion-social-twitter,
+.ion-social-instagram,
+.ion-pound{
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+}
+
+
+.ion-social-facebook:hover {
+    color: #3b5998;
+}
+
+.ion-social-twitter:hover {
+    color: #00aced;
+}
+
+.ion-social-instagram:hover{
+	color: #bc2a8d;
+}
+
+.ion-pound:hover{
+	color: black;
+}
+
+footer p{
+    color: #888;
+    text-align: center;
+    font-size: 80%;
+    margin-top: 30px;
+}
+
+.modal-container{
+	
+    position:fixed;
+    background:#fff;
+    border:3px solid;
+    width:70%;
+    max-width: 400px;
+    left:50%;
+    bottom: 50%;
+    padding: 20px;
+    border-radius: 5px;
+	
+
+    
+    -webkit-transform:transform: translate(-50%, -2000%);
+    -ms-transform:transform: translate(-50%, -2000%);
+    transform: translate(-50%, -2000%);
+    
+    -webkit-transition: transform 200ms ease-out;
+    -ms-transition: transform 200ms ease-out;
+    transition: transform 200ms ease-out;
+}
+
+
+
+.modal:before{
+	
+    content:"";
+    position:fixed;
+    display: none;
+    background: rgba(0,0,0,0.8);
+    top:0;
+    left:0;
+    height: 100%;
+    width:100%;
+}
+
+.modal:target:before{
+    display:block;
+}
+
+.modal:target .modal-container{
+	
+    -webkit-transform:transform: translate(-50%, 50%);
+    -ms-transform:transform: translate(-50%, 50%);
+    transform: translate(-50%, 50%);
+}
+
+#modal-close{}
